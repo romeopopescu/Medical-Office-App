@@ -76,6 +76,7 @@
             this.Medicine.Name = "Medicine";
             this.Medicine.Size = new System.Drawing.Size(120, 20);
             this.Medicine.TabIndex = 3;
+            this.Medicine.TextChanged += new System.EventHandler(this.Medicine_TextChanged);
             // 
             // PatientId
             // 
@@ -169,15 +170,18 @@
             // 
             // btnOk
             // 
+            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOk.Location = new System.Drawing.Point(99, 250);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 12;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(293, 250);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);

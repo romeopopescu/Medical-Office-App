@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Medical_Office.Classes
 {
-    internal class Prescription
+    public class Prescription
     {   
         public int Id { get; set; }
         public string Medicine { get; set; }
@@ -14,11 +14,11 @@ namespace Medical_Office.Classes
         public Patient Patient { get; set; }
         public Doctor Doctor { get; set; }
 
-        Prescription() { 
+        public Prescription() { 
             
         }
 
-        Prescription(int id, string medicine, DateTime dateTime, Patient Patient, Doctor Doctor)
+        public Prescription(int id, string medicine, DateTime dateTime, Patient Patient, Doctor Doctor)
         {
             Id = id;
             Medicine = medicine;

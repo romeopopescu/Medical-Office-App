@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace Medical_Office.Classes
 {
-    internal class Doctor
+    public class Doctor
     {
         public int DoctorId { get; set; }
         public string DoctorName { get; set;}
+        
 
-        Doctor() { }
+        public Doctor() { }
 
-        Doctor(int DoctorId, string DoctorName) { 
+        public Doctor(int DoctorId, string DoctorName)
+        {
             this.DoctorId = DoctorId;
             this.DoctorName = DoctorName;
+            
         }
     }
 }
